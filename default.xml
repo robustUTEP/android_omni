@@ -14,6 +14,9 @@
   <remote  name="omnirom"
            review="gerrit.omnirom.org"
            fetch="https://github.com/omnirom" />
+           
+    <remote  name="robust"
+           fetch="https://github.com/robustUTEP" />
 
   <default revision="refs/tags/android-4.4.4_r1"
            remote="aosp"
@@ -33,7 +36,7 @@
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-4.4"/>
   <project path="cts" name="platform/cts" groups="cts" />
-  <project path="dalvik" name="android_dalvik_omni" remote="github" revision="omni4_4" />
+  <project path="dalvik" name="android_dalvik_omni" remote="robust" revision="omni4_4" />
   <project path="developers/build" name="platform/developers/build" />
   <project path="developers/demos" name="platform/developers/demos" />
   <project path="developers/docs" name="platform/developers/docs" />
@@ -280,7 +283,7 @@
   <project path="frameworks/volley" name="platform/frameworks/volley" />
   <project path="frameworks/webview" name="android_frameworks_webview" remote="omnirom" revision="android-4.4" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" />
-  <project path="frameworks/base/core/java/android/app" name="robustUTEP/frameworks_base_core_omni" remote="github" revision="omni4_4"/>
+  <project path="frameworks/base/core/java/android/app" name="frameworks_base_core_omni" remote="robust" revision="omni4_4"/>
   <project path="hardware/akm" name="platform/hardware/akm" />
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="omnirom" revision="android-4.4" />
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="omnirom" revision="android-4.4" />
